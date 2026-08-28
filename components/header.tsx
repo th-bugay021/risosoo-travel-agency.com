@@ -1,0 +1,6 @@
+'use client';
+import Link from 'next/link';
+import { useState } from 'react';
+import { Mark } from './icons';
+const nav = [['About us','/about'], ['Study abroad','/study-abroad'], ['Services','/services'], ['Holiday packages','/packages'], ['Insights','/blog']];
+export function Header() { const [open, setOpen] = useState(false); return <header className="absolute z-20 w-full text-white"><div className="page-wrap flex h-20 items-center justify-between border-b border-white/15"><Link href="/" className="flex items-center gap-3" aria-label="Risosoo Travels home"><Mark/><span className="text-xs font-extrabold leading-3 tracking-[.14em]">RISOSOO<br/>TRAVELS</span></Link><nav className="hidden items-center gap-7 text-sm font-bold lg:flex">{nav.map(([label,href])=><Link key={href} href={href} className="transition hover:text-gold">{label}</Link>)}<Link href="/contact" className="button-primary !px-5 !py-2.5">Start your journey</Link></nav><button className="lg:hidden" onClick={()=>setOpen(!open)} aria-expanded={open} aria-label="Open navigation">Menu</button></div>{open&&<nav className="page-wrap flex flex-col gap-4 bg-navy py-6 lg:hidden">{nav.map(([label,href])=><Link key={href} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}<Link href="/contact">Contact us</Link></nav>}</header>; }

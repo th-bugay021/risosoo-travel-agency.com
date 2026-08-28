@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background:#F7F5F0; color:#1B2433; }
+::selection { background:#D4A537; color:#0A1B3D; }
+.eyebrow { @apply mb-4 flex items-center gap-3 text-xs font-extrabold uppercase tracking-[.18em] text-gold; }
+.eyebrow::before { content:''; @apply h-px w-8 bg-gold; }
+.button-primary { @apply inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-sm font-extrabold text-navy transition hover:-translate-y-0.5 hover:bg-[#e3bb58] focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2; }
+.button-secondary { @apply inline-flex items-center justify-center rounded-full border border-navy px-6 py-3 text-sm font-extrabold text-navy transition hover:-translate-y-0.5 hover:bg-navy hover:text-white focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2; }
+.page-wrap { @apply mx-auto w-full max-w-[1280px] px-5 sm:px-8 lg:px-12; }
+.section { @apply py-20 md:py-28 lg:py-32; }
+.placeholder-media { background:linear-gradient(135deg,#122b5c 0%,#0A1B3D 48%,#73571b 100%); }

@@ -1,0 +1,1 @@
+import type { MetadataRoute } from 'next'; export default function sitemap():MetadataRoute.Sitemap{return ['','/about','/study-abroad','/services','/packages','/blog','/contact'].map(url=>({url:`https://risosootravels.com${url}`,lastModified:new Date()}))}

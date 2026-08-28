@@ -1,0 +1,8 @@
+{
+  "name": "risosoo-travels",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "next lint" },
+  "dependencies": { "@portabletext/react": "^3.2.1", "@sanity/image-url": "^1.0.2", "@sanity/vision": "^3.91.0", "next": "^15.2.4", "next-sanity": "^9.10.1", "react": "^19.0.0", "react-dom": "^19.0.0", "resend": "^4.1.2", "sanity": "^3.91.0" },
+  "devDependencies": { "@types/node": "^22.13.10", "@types/react": "^19.0.10", "@types/react-dom": "^19.0.4", "autoprefixer": "^10.4.20", "eslint": "^9.21.0", "eslint-config-next": "^15.2.4", "postcss": "^8.5.3", "tailwindcss": "^3.4.17", "typescript": "^5.8.2" }
+}

@@ -1,0 +1,3 @@
+export function Arrow({ className = '' }: { className?: string }) { return <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>; }
+export function Mark() { return <span aria-hidden="true" className="grid h-10 w-10 place-items-center rounded-full border border-gold text-sm font-black tracking-tighter text-gold">RT</span>; }
+export function WhatsApp() { return <svg aria-hidden="true" viewBox="0 0 32 32" className="h-4 w-4" fill="currentColor"><path d="M16 3a13 13 0 0 0-11 19.94L3.5 28.5l5.72-1.47A13 13 0 1 0 16 3Zm0 23.67a10.6 10.6 0 0 1-5.41-1.48l-.39-.23-3.4.88.9-3.3-.25-.42A10.67 10.67 0 1 1 16 26.67Z"/></svg>; }
