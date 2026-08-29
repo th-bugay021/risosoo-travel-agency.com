@@ -9,7 +9,6 @@ const pages: Record<string, { eyebrow: string; title: string; copy: string }> = 
   about: { eyebrow: 'Our story', title: 'We make ambitious journeys feel possible.', copy: 'Risosoo Travels Int’l Ltd is a Nigeria-based travel and visa consultancy built around thoughtful, dependable guidance.' },
   'study-abroad': { eyebrow: 'Study abroad', title: 'Study anywhere. Start with clarity.', copy: 'Bring your academic plans into focus with personal support from course exploration through visa preparation.' },
   services: { eyebrow: 'Our expertise', title: 'The details make the difference.', copy: 'Every service is delivered with care, clarity and a commitment to the journey behind the paperwork.' },
-  packages: { eyebrow: 'Holiday packages', title: 'Make room for wonder.', copy: 'Thoughtfully planned escapes, ready to be tailored around the way you want to travel.' },
   blog: { eyebrow: 'Travel insights', title: 'Helpful knowledge for the road ahead.', copy: 'Practical guidance for students, travellers and families planning their next international move.' },
 };
 
