@@ -20,7 +20,7 @@ Use portrait images where possible (recommended 1200 × 1600 px):
 - `destinations/singapore.jpg`
 - `destinations/germany.jpg`
 - `destinations/dubai.jpg`
-- `destinations/japan.jpg`
+- `destinations/italy.jpg`
 
 ## Services
 
