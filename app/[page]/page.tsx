@@ -4,9 +4,7 @@ import { getDestinations } from '@/lib/sanity/destinations';
 import { urlForImage } from '@/lib/sanity/image';
 
 const pages: Record<string, { eyebrow: string; title: string; copy: string }> = {
-  about: { eyebrow: 'Our story', title: 'We make ambitious journeys feel possible.', copy: 'Risosoo Travels Int’l Ltd is a Nigeria-based travel and visa consultancy built around thoughtful, dependable guidance.' },
   'study-abroad': { eyebrow: 'Study abroad', title: 'Study anywhere. Start with clarity.', copy: 'Bring your academic plans into focus with personal support from course exploration through visa preparation.' },
-  blog: { eyebrow: 'Travel insights', title: 'Helpful knowledge for the road ahead.', copy: 'Practical guidance for students, travellers and families planning their next international move.' },
 };
 
 export default async function StandardPage({ params }: { params: Promise<{ page: string }> }) {
