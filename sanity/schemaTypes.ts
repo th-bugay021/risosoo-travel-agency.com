@@ -84,8 +84,8 @@ export const schemaTypes = [
     name: 'testimonial', title: 'Testimonial', type: 'document',
     fields: [
       defineField({ name: 'name', type: 'string' }),
-      imageField('photo', 'Photo'),
-      defineField({ name: 'quote', type: 'text' }),
+      defineField({ name: 'photo', title: 'Photo (optional)', type: 'image', options: { hotspot: true }, fields: [defineField({ name: 'alt', title: 'Accessible alt text', type: 'string' })] }),
+      defineField({ name: 'quote', type: 'text', validation: (rule) => rule.required() }),
       defineField({ name: 'role', type: 'string' }),
     ],
   }),
