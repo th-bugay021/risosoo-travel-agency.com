@@ -2,8 +2,14 @@
 
 import { useEffect, useRef } from 'react';
 
-export function HeroVideo() {
+type HeroVideoProps = {
+  heroVideoUrl?: string;
+  heroPosterUrl?: string;
+};
+
+export function HeroVideo({ heroVideoUrl, heroPosterUrl }: HeroVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const source = heroVideoUrl || 'https://media.blacktomato.com/2025%2F02%2Fblack-tomato-homepage.mp4';
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -15,5 +21,5 @@ export function HeroVideo() {
     video.addEventListener('canplay', attemptPlayback);
     return () => video.removeEventListener('canplay', attemptPlayback);
   }, []);
-  return <video ref={videoRef} className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline preload="auto" aria-hidden="true"><source src="https://media.blacktomato.com/2025%2F02%2Fblack-tomato-homepage.mp4" type="video/mp4"/></video>;
+  return <video ref={videoRef} className="absolute inset-0 h-full w-full object-cover" autoPlay muted playsInline loop poster={heroPosterUrl} preload="auto" aria-hidden="true"><source src={source} type="video/mp4"/></video>;
 }
