@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 
-const nav = [['Home', '/'], ['About us', '/about'], ['Study abroad', '/study-abroad'], ['Services', '/services'], ['Holiday packages', '/packages'], ['Insights', '/blog']];
+const nav = [['Home', '/'], ['About Us', '/about'], ['Study Abroad', '/study-abroad'], ['Services', '/services'], ['Holiday Packages', '/packages'], ['Insights', '/blog']];
 
 export function Header() {
   const [open, setOpen] = useState(false);
